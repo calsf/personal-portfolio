@@ -1,19 +1,71 @@
+img {
+	position: relative;
+	max-width: 90%;
+	height: auto;
+	padding: 0 0 0 40px;
+	z-index: -1;
+}
+
+h1 {
+	font-size: 50px;
+	letter-spacing: 5px;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+ul {
+	list-style: none;
+	display: inline-flex;
+	padding-bottom: 50px;
+}
+
+li {
+	cursor: pointer;
+	font-size: 20px;
+	margin: 0 10px 0 0;
+	transition: all .4s;
+}
+
+li:hover {
+	transform: scale(1.05) ;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	padding: 10px 0px 0 20px;
+}
+
 .slideshow-container {
-	max-width: 800px;
+	max-width: 1200px;
 	position: relative;
 	margin: auto;
 }
 
 .slide-content {
-	padding: 0px 20px 10px 50%;
+	display: flex;
 }
 
-img {
-	position: absolute;
-	max-width: 350px;
-	padding: 50px 0px 0px 40px;
-	z-index: -1;
-	opacity: .5;
+.slide-desc {
+	font-size: 21px;
+}
+
+.content-inner {
+	padding: 0 20px 0 15px;
+}
+
+.img-container{
+	display: flex;
+	align-items: center;
+	width: 5000px;
 }
 
 .slide {
@@ -61,7 +113,6 @@ img {
 	position: relative;
 	text-align: center;
 	padding-top: 15px;
-
 }
 
 .dot {
@@ -83,8 +134,36 @@ img {
 .link {
 	display: inline-block;
 	border: 2px solid blue;
+	border-radius: 4px;
+	color: blue;
 	padding: 5px;
 	text-decoration: none;
 	margin: 0 3px 0 0;
 	font-size: 20px;
+	transition: all .4s ease;
+}
+
+.link:hover {
+	transform: scale(1.05);
+	background-color: rgba(10, 20, 150, .7);
+	color: white;
+}
+
+/*if screen size is x pixels wide or less*/
+@media only screen and (max-width: 820px) {
+   .img-sm {
+   	display: none;
+   }
+   .inner-sm {
+   	padding: 0 20px 0 40px;
+   }
+   .link-container {
+   	text-align: center;
+   }
+}
+
+@media only screen and (max-width: 1000px) {
+   .font-sm {
+   	font-size: 19px;
+   }
 }
