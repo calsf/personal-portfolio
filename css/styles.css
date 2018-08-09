@@ -10,6 +10,11 @@ h1 {
 	font-size: 50px;
 	letter-spacing: 5px;
 	margin-bottom: 0;
+	cursor: default;
+	-webkit-user-select: none;       
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 h2 {
@@ -27,10 +32,30 @@ li {
 	font-size: 20px;
 	margin: 0 10px 0 0;
 	transition: all .4s;
+	-webkit-user-select: none;       
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 li:hover {
 	transform: scale(1.05) ;
+}
+
+.active-page {
+	border-bottom: 1px solid red;
+}
+
+#about-container {
+	max-width: 1200px;
+	position: relative;
+	margin: auto;
+}
+
+#slideshow-container {
+	max-width: 1200px;
+	position: relative;
+	margin: auto;
 }
 
 .nav {
@@ -42,12 +67,6 @@ li:hover {
 	display: flex;
 	justify-content: center;
 	padding: 10px 0px 0 20px;
-}
-
-.slideshow-container {
-	max-width: 1200px;
-	position: relative;
-	margin: auto;
 }
 
 .slide-content {
@@ -72,12 +91,23 @@ li:hover {
 	cursor: default;
 }
 
-.hide-slide {
+.hide {
 	display: none;
+}
+
+.show {
+	display: block;
 }
 
 .active-slide {
 	display: block;
+	opacity: 1;
+	animation: fade-in .6s linear;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0;}
+  100% {opacity: 1;}
 }
 
 

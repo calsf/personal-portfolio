@@ -12,13 +12,17 @@
 
 	<div class="nav">
 		<ul>
-			<li>About</li>
-			<li>Projects</li>
-			<li>Contact</li>
+			<li id="about-nav" onclick="changePage('about-container'); changeNav('about-nav')">About</li>
+			<li id="projects-nav" onclick="changePage('slideshow-container'); changeNav('projects-nav')">Projects</li>
+			<li id="contact-nav" onclick="changePage('contact-container'); changeNav('contact-nav')">Contact</li>
 		</ul>
 	</div>
 
-	<div class="slideshow-container">
+	<div id="about-container" class="hide">
+		<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat dui in magna lacinia, at mattis nibh mollis. Mauris venenatis erat a justo porttitor ultrices. Fusce leo lorem, malesuada a pretium id, ornare ut arcu. Aliquam arcu orci, facilisis non risus vel, ornare tristique nunc. Donec euismod faucibus orci et fringilla. Praesent vitae est id nulla imperdiet dapibus. In quis ligula sit amet nibh auctor pretium non non lacus. In aliquet quam ut nisi egestas, quis faucibus neque vestibulum. Etiam auctor lobortis ex. Sed ut mattis ipsum. Vivamus eget nulla dictum, sollicitudin arcu eu, pharetra ante.</h2>
+	</div>
+
+	<div id="slideshow-container" class="hide">
 		<a class="prev" onclick="nextSlide(-1)">&#10094;</a>
 		<a class="next" onclick="nextSlide(1)">&#10095;</a>
 
@@ -37,14 +41,14 @@
 			</div>
 			</div>
 		</div>
-		<div class="slide hide-slide">
+		<div class="slide hide">
 			<div class=slide-content>
 			<div class="img-container img-sm">
 				<img src="../img/ph.png" alt="image"/>
 			</div>
 			<div class="content-inner inner-sm">
 				<h2>NUMBER 2</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat dui in magna lacinia, at mattis nibh mollis. Mauris venenatis erat a justo porttitor ultrices. Fusce leo lorem, malesuada a pretium id, ornare ut arcu. Aliquam arcu orci, facilisis non risus vel, ornare tristique nunc. Donec euismod faucibus orci et fringilla. Praesent vitae est id nulla imperdiet dapibus. In quis ligula sit amet nibh auctor pretium non non lacus. In aliquet quam ut nisi egestas, quis faucibus neque vestibulum. Etiam auctor lobortis ex. Sed ut mattis ipsum. Vivamus eget nulla dictum, sollicitudin arcu eu, pharetra ante.</p>
+				<p class="slide-desc font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat dui in magna lacinia, at mattis nibh mollis. Mauris venenatis erat a justo porttitor ultrices. Fusce leo lorem, malesuada a pretium id, ornare ut arcu. Aliquam arcu orci, facilisis non risus vel, ornare tristique nunc. Donec euismod faucibus orci et fringilla. Praesent vitae est id nulla imperdiet dapibus. In quis ligula sit amet nibh auctor pretium non non lacus. In aliquet quam ut nisi egestas, quis faucibus neque vestibulum. Etiam auctor lobortis ex. Sed ut mattis ipsum. Vivamus eget nulla dictum, sollicitudin arcu eu, pharetra ante.</p>
 				<div class="link-container">
 					<a class="link" href="https://google.com" target="_blank">Screenshots</a>
 					<a class="link" href="https://github.com/calsf/personal-portfolio" target="_blank">Source</a>
@@ -52,14 +56,14 @@
 			</div>
 			</div>
 		</div>
-		<div class="slide hide-slide">
+		<div class="slide hide">
 			<div class=slide-content>
 			<div class="img-container img-sm">
 				<img src="../img/ph.png" alt="image"/>
 			</div>
 			<div class="content-inner inner-sm">
 				<h2>NUMBER 3</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat dui in magna lacinia, at mattis nibh mollis. Mauris venenatis erat a justo porttitor ultrices. Fusce leo lorem, malesuada a pretium id, ornare ut arcu. Aliquam arcu orci, facilisis non risus vel, ornare tristique nunc. Donec euismod faucibus orci et fringilla. Praesent vitae est id nulla imperdiet dapibus. In quis ligula sit amet nibh auctor pretium non non lacus. In aliquet quam ut nisi egestas, quis faucibus neque vestibulum. Etiam auctor lobortis ex. Sed ut mattis ipsum. Vivamus eget nulla dictum, sollicitudin arcu eu, pharetra ante.</p>
+				<p class="slide-desc font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat dui in magna lacinia, at mattis nibh mollis. Mauris venenatis erat a justo porttitor ultrices. Fusce leo lorem, malesuada a pretium id, ornare ut arcu. Aliquam arcu orci, facilisis non risus vel, ornare tristique nunc. Donec euismod faucibus orci et fringilla. Praesent vitae est id nulla imperdiet dapibus. In quis ligula sit amet nibh auctor pretium non non lacus. In aliquet quam ut nisi egestas, quis faucibus neque vestibulum. Etiam auctor lobortis ex. Sed ut mattis ipsum. Vivamus eget nulla dictum, sollicitudin arcu eu, pharetra ante.</p>
 				<div class="link-container">
 					<a class="link" href="https://google.com" target="_blank">Screenshots</a>
 					<a class="link" href="https://github.com/calsf/personal-portfolio" target="_blank">Source</a>
@@ -73,6 +77,10 @@
 			<span class="dot" onclick="chooseSlide(2)"></span>
 			<span class="dot" onclick="chooseSlide(3)"></span>
 		</div>
+	</div>
+
+	<div id="contact-container" class="hide">
+		<p>CONTACTCONTACTCONTACTCONTACTCONTACTCONTACTCONTACTCONTACT</p>
 	</div>
 
 </body>
