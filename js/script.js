@@ -3,6 +3,7 @@ let currentPage = document.getElementById("about-nav");
 changePage("about-container");
 changeNav("about-nav");
 
+//Slideshow functions
 function nextSlide(n) 
 {
 	showSlide(currentSlide += n);
@@ -36,6 +37,8 @@ function showSlide(n)
 
 }
 
+
+//Change displayed page
 function changePage(page)
 {
 	let arr = [document.getElementById("about-container"), document.getElementById("slideshow-container"), document.getElementById("contact-container")]
@@ -49,6 +52,7 @@ function changePage(page)
 	pageToShow.classList.add("show");
 }
 
+//Change navigation selection
 function changeNav(page)
 {
 	let arr = [document.getElementById("about-nav"), document.getElementById("projects-nav"), document.getElementById("contact-nav")]
