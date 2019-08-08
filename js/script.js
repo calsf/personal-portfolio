@@ -41,7 +41,16 @@ function showSlide(n)
 //Change displayed page
 function changePage(page)
 {
-	let arr = [document.getElementById("about-container"), document.getElementById("slideshow-container"), document.getElementById("contact-container")]
+	let arr = [
+		document.getElementById("about-container"), 
+		document.getElementById("slideshow-container"), 
+		document.getElementById("contact-container"), 
+		document.getElementById('project1-container'),
+		document.getElementById('project2-container'),
+		document.getElementById('project3-container'),
+		document.getElementById('project4-container'),
+		document.getElementById('project5-container'),
+	]
 	for(let i = 0; i < arr.length; i++)
 	{
 		arr[i].classList.add("hide");

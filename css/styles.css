@@ -1,6 +1,7 @@
-img {
+.slide-image {
 	position: relative;
 	max-width: 90%;
+	max-height: 400px;
 	height: auto;
 	padding: 0 0 0 40px;
 	z-index: -1;
@@ -40,10 +41,6 @@ li {
 
 li:hover {
 	transform: scale(1.05) ;
-}
-
-img {
-	max-height: 400px;
 }
 
 #about-container p {
@@ -193,6 +190,7 @@ img {
 }
 
 .link {
+	cursor: pointer;
 	display: inline-block;
 	border: 2px solid blue;
 	border-radius: 4px;
@@ -208,6 +206,23 @@ img {
 	transform: scale(1.05);
 	background-color: rgba(10, 20, 150, .7);
 	color: white;
+}
+
+.project {
+	text-align: center;
+	margin: auto;
+	user-select: none;
+}
+
+.screenshot {
+	cursor: pointer;
+	user-select: none;
+	max-height: 400px;
+	max-width: 400px;
+	margin: 30px;
+	outline-width: 2px;
+	outline-color: black;
+	outline-style: double;
 }
 
 /*if screen size is x pixels wide or less*/

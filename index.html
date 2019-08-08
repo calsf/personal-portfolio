@@ -18,11 +18,13 @@
 		</ul>
 	</div>
 
+	<!--ABOUT-->
 	<div id="about-container" class="hide">
 		<h2>Welcome!</h2>
 		<p>My name is Calvin Chen and I am currently a student at the University of Maryland studying Computer Science. I received my associates degree in Computer Science from Montgomery College. With the skills and knowledge I gained during my time studying Computer Science, I have worked on some projects that have helped further expand my knowledge and skillset. These projects are showcased here on this site in the <strong>Projects</strong> section. In addition, I am experienced in working with Adobe Photoshop as well as being proficient in video editing.</p>
 	</div>
 
+	<!--SLIDESHOW-->
 	<div id="slideshow-container" class="hide">
 		<a class="prev" onclick="nextSlide(-1)">&#10094;</a>
 		<a class="next" onclick="nextSlide(1)">&#10095;</a>
@@ -30,13 +32,13 @@
 		<div class="slide active-slide">
 			<div class=slide-content>
 			<div class="img-container img-sm">
-				<img src="./img/framerate1.png" alt="image"/>
+				<img class='slide-image' src="./img/framerate1.png" alt="image"/>
 			</div>
 			<div class="content-inner inner-sm">
 				<h2>Framerate</h2>
 				<p class="slide-desc font-sm">An interactive website made using React.js for rating weapons and frames from the video game <strong>Warframe</strong>. Requires user registration and sign-in in order to rate. User login information is hashed and stored using a PostgreSQL database along with the user's ratings for each item. Users can rate an item multiple times, overriding any previous rating rather than adding a new rating.</p>
 				<div class="link-container">
-					<a class="link" href="./html/project1.html" target="_blank">Screenshots</a>
+					<a class="link" onclick="changePage('project1-container')">Screenshots</a>
 					<a class="link" href="https://github.com/calsf/framerate" target="_blank">Source</a>
 				</div>
 			</div>
@@ -45,13 +47,13 @@
 		<div class="slide hide">
 			<div class=slide-content>
 			<div class="img-container img-sm">
-				<img src="./img/homepage1.png" alt="image"/>
+				<img class='slide-image' src="./img/homepage1.png" alt="image"/>
 			</div>
 			<div class="content-inner inner-sm">
 				<h2>Home Page</h2>
 				<p class="slide-desc font-sm">A website meant to serve as a suitable home page. Features include weather information using OpenWeatherMap API integration, Google search bar, quick links, notepad, and customizable settings. No user registration is required as settings are saved using local storage.</p>
 				<div class="link-container">
-					<a class="link" href="./html/project2.html" target="_blank">Screenshots</a>
+					<a class="link" onclick="changePage('project2-container')">Screenshots</a>
 					<a class="link" href="https://github.com/calsf/home-page" target="_blank">Source</a>
 				</div>
 			</div>
@@ -60,13 +62,13 @@
 		<div class="slide hide">
 			<div class=slide-content>
 			<div class="img-container img-sm">
-				<img src="./img/warpbound2.png" alt="image"/>
+				<img class='slide-image' src="./img/warpbound2.png" alt="image"/>
 			</div>
 			<div class="content-inner inner-sm">
 				<h2>Warp Bound</h2>
 				<p class="slide-desc font-sm">A bullet hell style game made using Phaser 3 framework and Webpack module bundler. Unlike traditional bullet hell games, the only method of movement is to teleport around. Survive against an endless wave of enemies to obtain as much gold as possible. Featuring high score system and a single tap setting to teleport and attack with one click. </p>
 				<div class="link-container">
-					<a class="link" href="./html/project3.html" target="_blank">Screenshots</a>
+					<a class="link" onclick="changePage('project3-container')">Screenshots</a>
 					<a class="link" href="https://github.com/calsf/warp-bound" target="_blank">Source</a>
 				</div>
 			</div>
@@ -75,13 +77,13 @@
 		<div class="slide hide">
 			<div class=slide-content>
 			<div class="img-container img-sm">
-				<img src="./img/leapfrog1.png" alt="image"/>
+				<img class='slide-image' src="./img/leapfrog1.png" alt="image"/>
 			</div>
 			<div class="content-inner inner-sm">
 				<h2>Leap Frog Jones</h2>
 				<p class="slide-desc font-sm">A 2D side-scroller/platformer game made using Unity 2018.3.7. Play as a frog named Jones as he ventures through his home forest. Featuring 5 levels along with level selection, a variety of collectable weapons, automatic saving of level completion and weapon acquisition, high score system, and customizable keybinds. Graphical assets are made in Adobe Photoshop. </p>
 				<div class="link-container">
-					<a class="link" href="./html/project4.html" target="_blank">Screenshots</a>
+					<a class="link" onclick="changePage('project4-container')">Screenshots</a>
 					<a class="link" href="https://github.com/calsf/leap-frog" target="_blank">Source</a>
 				</div>
 			</div>
@@ -90,13 +92,13 @@
 		<div class="slide hide">
 			<div class=slide-content>
 			<div class="img-container img-sm">
-				<img src="./img/codexprime1.png" alt="image"/>
+				<img class='slide-image' src="./img/codexprime1.png" alt="image"/>
 			</div>
 			<div class="content-inner inner-sm">
 				<h2>Codex Prime</h2>
 				<p class="slide-desc font-sm">A discord bot for the video game <strong>Warframe</strong> made using discord.py and WarframeStatus API. Bot includes commands for obtaining Warframe world state information as well as tracking certain world state information for each user. </p>
 				<div class="link-container">
-					<a class="link" href="./html/project5.html" target="_blank">Screenshots</a>
+					<a class="link" onclick="changePage('project5-container')">Screenshots</a>
 					<a class="link" href="https://github.com/calsf/codex-prime" target="_blank">Source</a>
 				</div>
 			</div>
@@ -112,11 +114,57 @@
 		</div>
 	</div>
 
+	<!--CONTACT-->
 	<div id="contact-container" class="hide">
 		<p>
 			<a href="mailto:calvin_c32@yahoo.com"><img class="contact-icon" src="./img/email-icon.png" alt="e-mail" title="calvin_c32@yahoo.com"></a>
 			<a href="https://github.com/calsf" target="_blank"> <img class="contact-icon" src="./img/git-icon.png" alt="github" title="GitHub - calsf"></a>
 		</p>
+	</div>
+
+	<!--PROJECT CONTAINERS-->
+	<div id="project1-container" class="hide project">
+		<div>
+			<img class="screenshot" src="./img/framerate1.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/framerate2.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/framerate3.png" onclick="window.open(this.src)"/>
+		</div>
+	</div>
+
+	<div id="project2-container" class="hide project">
+		<div>
+			<img class="screenshot" src="./img/homepage2.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/homepage3.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/homepage4.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/homepage5.png" onclick="window.open(this.src)"/>
+		</div>
+	</div>
+
+	<div id="project3-container" class="hide project">
+		<div>
+			<img class="screenshot" src="./img/warpbound1.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/warpbound2.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/warpbound3.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/warpbound4.png" onclick="window.open(this.src)"/>
+		</div>
+	</div>
+
+	<div id="project4-container" class="hide project">
+		<div>
+			<img class="screenshot" src="./img/leapfrog1.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/leapfrog2.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/leapfrog3.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/leapfrog4.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/leapfrog5.png" onclick="window.open(this.src)"/>
+		</div>
+	</div>
+
+	<div id="project5-container" class="hide project">
+		<div>
+			<img class="screenshot" src="./img/codexprime2.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/codexprime3.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/codexprime4.png" onclick="window.open(this.src)"/>
+		</div>
 	</div>
 
 </body>

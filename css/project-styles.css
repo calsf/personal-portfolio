@@ -19,23 +19,21 @@ h1 {
 	font-size: 50px;
 	letter-spacing: 5px;
 	margin-bottom: 0;
-	cursor: pointer;
+	cursor: default;
 	user-select: none;
 }
 
-ul {
+.nav {
 	list-style: none;
 	display: inline-flex;
 }
 
 li {
-	cursor: default;
-	font-weight: bold;
+	cursor: pointer;
 	font-size: 20px;
 	margin: 0 10px 0 0;
 	transition: all .4s;
 	user-select: none;
-	border-bottom: 1px solid black;
 }
 
 .header {
@@ -45,7 +43,23 @@ li {
 }
 
 a {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+	color: black;
+  	text-decoration: none;
+  	cursor: default;
+}
+
+.link-nav {
+	display: inline-block;
+	color: black;
+  	text-decoration: none;
+  	cursor: pointer;
+	font-size: 20px;
+	margin: 0 10px 0 0;
+	transition: all .4s;
+	user-select: none;
+}
+
+.link-nav:hover {
+	transform: scale(1.05) ;
+	border-bottom: 1px solid red;
 }
