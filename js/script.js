@@ -72,3 +72,22 @@ function changeNav(page)
 	let currentNav = document.getElementById(page);
 	currentNav.classList.add("active-page");
 }
+
+//Modal image display
+var modal = document.getElementById("modal");
+var modalImg = document.getElementById("modal-img");
+
+//Close modal on click
+function closeModal() { 
+	modal.style.display = "none";
+}
+
+//Show image in modal when image is clicked
+function getImage(img, src)
+{
+	modal.style.display = "block";
+	modalImg.src = src;
+}
+
+
+

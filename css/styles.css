@@ -84,6 +84,7 @@ li:hover {
 .contact-icon {
 	height: 100px;
 	width: 100px;
+	padding: 0 0 0 40px;
 	cursor: pointer;
 	z-index: 1;
 }
@@ -223,6 +224,56 @@ li:hover {
 	outline-width: 2px;
 	outline-color: black;
 	outline-style: double;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+#modal-img {
+  margin: auto;
+  display: block;
+  max-height: 1400px;
+  max-width: 1400px;
+  outline-width: 2px;
+  outline-color: white;
+  outline-style: double;
+  animation-name: zoom;
+  animation-duration: 0.4s
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 /*if screen size is x pixels wide or less*/

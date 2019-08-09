@@ -125,46 +125,53 @@
 	<!--PROJECT CONTAINERS-->
 	<div id="project1-container" class="hide project">
 		<div>
-			<img class="screenshot" src="./img/framerate1.png" onclick="window.open(this.src)"/>
-			<img class="screenshot" src="./img/framerate2.png" onclick="window.open(this.src)"/>
-			<img class="screenshot" src="./img/framerate3.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/framerate1.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/framerate2.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/framerate3.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/framerate4.png" onclick="getImage(this, this.src)"/>
 		</div>
 	</div>
 
 	<div id="project2-container" class="hide project">
 		<div>
-			<img class="screenshot" src="./img/homepage2.png" onclick="window.open(this.src)"/>
-			<img class="screenshot" src="./img/homepage3.png" onclick="window.open(this.src)"/>
-			<img class="screenshot" src="./img/homepage4.png" onclick="window.open(this.src)"/>
-			<img class="screenshot" src="./img/homepage5.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/homepage2.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/homepage3.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/homepage4.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/homepage5.png" onclick="getImage(this, this.src)"/>
 		</div>
 	</div>
 
 	<div id="project3-container" class="hide project">
 		<div>
-			<img class="screenshot" src="./img/warpbound1.png" onclick="window.open(this.src)"/>
-			<img class="screenshot" src="./img/warpbound2.png" onclick="window.open(this.src)"/>
-			<img class="screenshot" src="./img/warpbound3.png" onclick="window.open(this.src)"/>
-			<img class="screenshot" src="./img/warpbound4.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/warpbound1.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/warpbound2.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/warpbound3.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/warpbound4.png" onclick="getImage(this, this.src)"/>
 		</div>
 	</div>
 
 	<div id="project4-container" class="hide project">
 		<div>
-			<img class="screenshot" src="./img/leapfrog1.png" onclick="window.open(this.src)"/>
-			<img class="screenshot" src="./img/leapfrog2.png" onclick="window.open(this.src)"/>
-			<img class="screenshot" src="./img/leapfrog3.png" onclick="window.open(this.src)"/>
-			<img class="screenshot" src="./img/leapfrog4.png" onclick="window.open(this.src)"/>
-			<img class="screenshot" src="./img/leapfrog5.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/leapfrog1.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/leapfrog2.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/leapfrog3.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/leapfrog4.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/leapfrog5.png" onclick="getImage(this, this.src)"/>
 		</div>
 	</div>
 
 	<div id="project5-container" class="hide project">
 		<div>
-			<img class="screenshot" src="./img/codexprime2.png" onclick="window.open(this.src)"/>
-			<img class="screenshot" src="./img/codexprime3.png" onclick="window.open(this.src)"/>
-			<img class="screenshot" src="./img/codexprime4.png" onclick="window.open(this.src)"/>
+			<img class="screenshot" src="./img/codexprime2.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/codexprime3.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/codexprime4.png" onclick="getImage(this, this.src)"/>
 		</div>
+	</div>
+
+	<!-- Modal Image -->
+	<div id="modal">
+	  <span class="close-modal" onclick="closeModal()">&times;</span>
+	  <img id="modal-img">
 	</div>
 
 </body>
