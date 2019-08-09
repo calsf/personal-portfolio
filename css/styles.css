@@ -245,8 +245,8 @@ li:hover {
 #modal-img {
   margin: auto;
   display: block;
-  max-height: 100%;
-  max-width: 100%;
+  max-height: 95%;
+  max-width: 95%;
   outline-width: 2px;
   outline-color: white;
   outline-style: double;
