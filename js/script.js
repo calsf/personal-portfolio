@@ -74,8 +74,8 @@ function changeNav(page)
 }
 
 //Modal image display
-var modal = document.getElementById("modal");
-var modalImg = document.getElementById("modal-img");
+let modal = document.getElementById("modal");
+let modalImg = document.getElementById("modal-img");
 
 //Close modal on click
 function closeModal() { 
@@ -90,4 +90,41 @@ function getImage(img, src)
 }
 
 
+//Detect swipe on slideshow
+let container = document.getElementById("slideshow-container");
 
+container.addEventListener("touchstart", startTouch, false);
+container.addEventListener("touchmove", handleTouch, false);
+
+let initialX = null;
+
+function startTouch(e) 
+{
+	initialX = e.touches[0].clientX;
+}
+
+function handleTouch(e) 
+{
+	if (initialX === null) {
+		return;
+	}
+
+	let currentX = e.touches[0].clientX;
+
+    let diffX = initialX - currentX;
+
+    if (diffX > 0) 
+    {
+    	//Swiped left
+    	nextSlide(-1);
+    }
+    else if(diffX < 0)
+    {
+    	//Swiped right
+    	nextSlide(1);
+    }
+
+    initialX = null;
+
+    e.preventDefault();
+}
