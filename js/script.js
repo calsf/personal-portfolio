@@ -1,5 +1,7 @@
 let currentSlide = 1;
 let currentPage = document.getElementById("about-nav");
+let dots = document.querySelectorAll(".dot");	//Non-live collection of all dot elements
+let slides = document.getElementsByClassName("slide");	//Default collection of all slides
 changePage("about-container");
 changeNav("about-nav");
 
@@ -18,20 +20,46 @@ function showSlide(n)
 {
 	let activeSlide = document.getElementsByClassName("active-slide")
 	let activeDot = document.getElementsByClassName("active-dot");
-	let slides = document.getElementsByClassName("slide");
-	let dots = document.getElementsByClassName("dot");
 
 	if (n > slides.length) 
 	{
 		currentSlide = 1;
 	}
-	if(n < 1)
+	if (n < 1)
 	{
 		currentSlide = slides.length;
 	}
 
 	activeDot[0].classList.remove("active-dot");
 	activeSlide[0].className = activeSlide[0].className.replace("active-slide", "hide");
+	slides[currentSlide-1].classList.add("active-slide");
+	dots[currentSlide-1].classList.add("active-dot");
+
+}
+
+function filterSlides(category)
+{
+	let activeSlide = document.getElementsByClassName("active-slide")
+	let activeDot = document.getElementsByClassName("active-dot");
+	slides = document.getElementsByClassName(category);
+
+	//Filter displayable slides and number of dots based on category
+	let i = 0;
+	for (i = 0; i < dots.length; i++)
+	{
+		if (slides.length <= i)
+		{
+			dots[i].classList.remove("dot");
+		}
+		else
+		{
+			dots[i].classList.add("dot");
+		}
+	}
+
+	//Reset current slide and dot to first slide and dot
+	currentSlide = 1;
+	activeDot[0].classList.remove("active-dot");
 	slides[currentSlide-1].classList.add("active-slide");
 	dots[currentSlide-1].classList.add("active-dot");
 
