@@ -93,12 +93,23 @@ function changePage(page)
 function changeNav(page)
 {
 	let arr = [document.getElementById("about-nav"), document.getElementById("projects-nav"), document.getElementById("contact-nav")]
+	let dots = document.getElementsByClassName("dot-container");
 	for(let i = 0; i < arr.length; i++)
 	{
 		arr[i].classList.remove("active-page");
 	}
 	let currentNav = document.getElementById(page);
 	currentNav.classList.add("active-page");
+
+	//Show dots if on project page, else hide dots
+	if (currentNav === arr[1])
+	{
+		dots[0].classList.remove("hide");
+	}
+	else
+	{
+		dots[0].classList.add("hide");
+	}
 }
 
 //Modal image display
@@ -143,13 +154,13 @@ function handleTouch(e)
 
     if (diffX > 0) 
     {
-    	//Swiped left
-    	nextSlide(-1);
+    	//Swiped left, move to next slide
+    	nextSlide(1);
     }
     else if(diffX < 0)
     {
-    	//Swiped right
-    	nextSlide(1);
+    	//Swiped right, go back to prev slide
+    	nextSlide(-1);
     }
 
     initialX = null;

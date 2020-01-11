@@ -43,10 +43,17 @@ li:hover {
 	transform: scale(1.05) ;
 }
 
-#about-container p {
-	line-height: 25px;
-	font-size: 20px;
+#about-container h2 {
+	max-width: 800px;
 	margin: auto;
+	padding: 16px 0;
+}
+
+#about-container p {
+	line-height: 32px;
+	font-size: 24px;
+	margin: auto;
+	max-width: 800px;
 }
 
 .active-page {
@@ -54,19 +61,19 @@ li:hover {
 }
 
 #about-container {
-	max-width: 1200px;
 	position: relative;
-	margin: auto;
 	cursor: default;
 	user-select: none;
+	font-family: 'custom-font';
+	margin: 8px 48px;
 }
 
 #slideshow-container {
 	max-width: 1200px;
-	min-height: 450px;
 	position: relative;
 	margin: auto;
 	user-select: none;
+	font-family: 'custom-font';
 }
 
 #contact-container {
@@ -80,12 +87,13 @@ li:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: 'custom-font';
 }
 
 .contact-icon {
 	height: 100px;
 	width: 100px;
-	padding: 0 0 0 40px;
+	padding: 0px 24px;
 	cursor: pointer;
 	z-index: 1;
 }
@@ -93,6 +101,7 @@ li:hover {
 .header {
 	display: flex;
 	justify-content: center;
+	font-family: 'custom-font';
 }
 
 .slide-content {
@@ -101,7 +110,7 @@ li:hover {
 }
 
 .slide-desc {
-	font-size: 21px;
+	font-size: 24px;
 }
 
 .content-inner {
@@ -172,7 +181,7 @@ li:hover {
 .dot-container {
 	position: relative;
 	text-align: center;
-	padding-top: 15px;
+	padding-top: 16px;
 	margin: 16px;
 }
 
@@ -198,9 +207,9 @@ li:hover {
 	border: 2px solid blue;
 	border-radius: 4px;
 	color: blue;
-	padding: 5px;
+	padding: 8px;
 	text-decoration: none;
-	margin: 0 3px 0 0;
+	margin: 0 8px 0 0;
 	font-size: 20px;
 	transition: all .4s ease;
 }
@@ -286,12 +295,13 @@ li:hover {
    .img-sm-show {
    	display: flex;
    	justify-content: center;
-   	max-height: 350px;
    	width: auto;
+   	height: auto;
+   	max-height: 350px;
    }
    .slide-sm {
-   	min-height: 600px;
-   	max-height: 600px;
+   	min-height: 650px;
+   	max-height: 650px;
    }
    .inner-sm {
    	padding: 0 48px;
@@ -299,4 +309,9 @@ li:hover {
    .link-container {
    	text-align: center;
    }
+}
+
+@font-face {
+    font-family: 'custom-font'; /*a name to be used later*/
+    src: url("./JosefinSans-Light.ttf"); /*URL to font*/
 }
