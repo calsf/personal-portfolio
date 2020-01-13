@@ -37,11 +37,19 @@ function showSlide(n)
 
 }
 
-function filterSlides(category)
+function filterSlides(category, filterSelect)
 {
 	let activeSlide = document.getElementsByClassName("active-slide")
 	let activeDot = document.getElementsByClassName("active-dot");
 	slides = document.getElementsByClassName(category);
+
+	//Updated filter selection
+	let filterEle = document.getElementsByClassName("filter");
+	for(let i = 0; i < filterEle.length; i++)
+	{
+		filterEle[i].classList.remove("active-filter");
+	}
+	filterSelect.classList.add("active-filter");
 
 	//Filter displayable slides and number of dots based on category
 	let i = 0;
@@ -60,6 +68,7 @@ function filterSlides(category)
 	//Reset current slide and dot to first slide and dot
 	currentSlide = 1;
 	activeDot[0].classList.remove("active-dot");
+	activeSlide[0].className = activeSlide[0].className.replace("active-slide", "hide");
 	slides[currentSlide-1].classList.add("active-slide");
 	dots[currentSlide-1].classList.add("active-dot");
 
@@ -69,6 +78,8 @@ function filterSlides(category)
 //Change displayed page
 function changePage(page)
 {
+	let dots = document.getElementsByClassName("dot-container");
+
 	let arr = [
 		document.getElementById("about-container"), 
 		document.getElementById("slideshow-container"), 
@@ -78,6 +89,7 @@ function changePage(page)
 		document.getElementById('project3-container'),
 		document.getElementById('project4-container'),
 		document.getElementById('project5-container'),
+		document.getElementById('project6-container'),
 	]
 	for(let i = 0; i < arr.length; i++)
 	{
@@ -87,22 +99,9 @@ function changePage(page)
 	let pageToShow = document.getElementById(page);
 	pageToShow.classList.remove("hide");
 	pageToShow.classList.add("show");
-}
-
-//Change navigation selection
-function changeNav(page)
-{
-	let arr = [document.getElementById("about-nav"), document.getElementById("projects-nav"), document.getElementById("contact-nav")]
-	let dots = document.getElementsByClassName("dot-container");
-	for(let i = 0; i < arr.length; i++)
-	{
-		arr[i].classList.remove("active-page");
-	}
-	let currentNav = document.getElementById(page);
-	currentNav.classList.add("active-page");
 
 	//Show dots if on project page, else hide dots
-	if (currentNav === arr[1])
+	if (pageToShow === arr[1])
 	{
 		dots[0].classList.remove("hide");
 	}
@@ -110,6 +109,18 @@ function changeNav(page)
 	{
 		dots[0].classList.add("hide");
 	}
+}
+
+//Change navigation selection
+function changeNav(page)
+{
+	let arr = [document.getElementById("about-nav"), document.getElementById("projects-nav"), document.getElementById("contact-nav")]
+	for(let i = 0; i < arr.length; i++)
+	{
+		arr[i].classList.remove("active-page");
+	}
+	let currentNav = document.getElementById(page);
+	currentNav.classList.add("active-page");
 }
 
 //Modal image display
