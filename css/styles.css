@@ -248,6 +248,7 @@ li:hover {
 	text-align: center;
 	margin: auto;
 	user-select: none;
+	padding: 0 64px;
 }
 
 .screenshot {
@@ -259,6 +260,22 @@ li:hover {
 	outline-width: 2px;
 	outline-color: black;
 	outline-style: double;
+}
+
+.return-container {
+	padding: 0 64px;
+	margin: auto;
+}
+
+.return-arrow {
+	font-size: 32px;
+	cursor: pointer;
+}
+
+.return-text {
+	font-size: 24px;
+	font-family: 'JosefinSans';
+	cursor: pointer;
 }
 
 #modal {
@@ -275,6 +292,7 @@ li:hover {
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.9);
+  user-select: none;
 }
 
 #modal-img {
@@ -286,7 +304,8 @@ li:hover {
   outline-color: white;
   outline-style: double;
   animation-name: zoom;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
+  user-select: none;
 }
 
 @keyframes zoom {
@@ -302,6 +321,7 @@ li:hover {
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+  user-select: none;
 }
 
 .close-modal:hover,
@@ -331,6 +351,9 @@ li:hover {
    	padding: 0 48px;
    }
    .link-container {
+   	text-align: center;
+   }
+   .return-sm {
    	text-align: center;
    }
 }
