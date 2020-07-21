@@ -52,7 +52,7 @@
 
 				<h2>Framerate</h2>
 				<h4>JavaScript | PostgreSQL | React</h4>
-				<p class="slide-desc">A website for rating weapons and frames from the video game Warframe. Requires user registration and sign-in to submit ratings. User login information is hashed and stored using a PostgreSQL database along with the user's ratings for each item. Users can rate an item multiple times, overriding their previous rating instead of adding a new rating.</p>
+				<p class="slide-desc">A website for rating weapons and frames from the video game Warframe. Requires user registration and sign-in to submit ratings. User login information is hashed and stored using a PostgreSQL database along with the user's ratings for each item.</p>
 				<div class="link-container">
 					<a class="link" onclick="changePage('project1-container')">Screenshots</a>
 					<a class="link" href="https://github.com/calsf/framerate" target="_blank">Source</a>
@@ -73,7 +73,7 @@
 
 				<h2>Home Page</h2>
 				<h4>JavaScript</h4>
-				<p class="slide-desc">A website meant to serve as a home page for browsers. Features include weather information using OpenWeatherMap API integration, Google search bar, quick links, notepad, and customizable settings.</p>
+				<p class="slide-desc">A website meant to serve as a home page for browsers. Includes weather information using OpenWeatherMap API integration, Google search bar, quick links, notepad, and customizable settings.</p>
 				<div class="link-container">
 					<a class="link" onclick="changePage('project2-container')">Screenshots</a>
 					<a class="link" href="https://github.com/calsf/home-page" target="_blank">Source</a>
@@ -94,10 +94,33 @@
 
 				<h2>Warp Bound</h2>
 				<h4>JavaScript</h4>
-				<p class="slide-desc">A bullet hell style game made using Phaser 3 framework. Unlike traditional bullet hell games, the only method of movement is to teleport around. Survive against an endless wave of enemies to obtain as much gold as possible. Featuring high score system and a single tap setting to teleport and attack with one click. </p>
+				<p class="slide-desc">An experimental bullet hell style game. Unlike traditional bullet hell games, the only method of movement is to teleport around. Includes high score system and a single tap setting to teleport and attack with one click. </p>
 				<div class="link-container">
+					<a class="link" onclick="changePage('play-warp-bound')"> Play </a>
 					<a class="link" onclick="changePage('project3-container')">Screenshots</a>
 					<a class="link" href="https://github.com/calsf/warp-bound" target="_blank">Source</a>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="slide slide-sm hide csharp">
+			<div class=slide-content>
+			<div class="img-container img-sm-hide">
+				<img class='slide-image' src="./img/aura1.png" alt="image"/>
+			</div>
+			<div class="content-inner inner-sm">
+
+				<div class="hide img-sm-show">
+					<img class='slide-image' src="./img/aura1.png" alt="image"/>
+				</div>
+
+				<h2>Aura</h2>
+				<h4>C# | Unity 2019.3.2</h4>
+				<p class="slide-desc">A single player 2D platformer game. Includes 16 playable levels along with 13 unlockable and upgradable weapons. All player progress is serialized and saved to a binary file. Supports keyboard and gamepad along with customizable keybinds. </p>
+				<div class="link-container">
+					<a class="link" onclick="changePage('play-aura')"> Play </a>
+					<a class="link" onclick="changePage('project5-container')">Screenshots</a>
+					<a class="link" href="https://github.com/calsf/aura" target="_blank">Source</a>
 				</div>
 			</div>
 			</div>
@@ -115,31 +138,11 @@
 
 				<h2>Iconic Form</h2>
 				<h4>C# | Unity 2018.3.7</h4> 
-				<p class="slide-desc">A 2D top down online multiplayer battle arena game. Choose from multiple characters and fight other players in a free for all brawl. Includes a variety of maps to choose from. Graphical assets made with Adobe Photoshop. </p>
+				<p class="slide-desc">A 2D top down online multiplayer battle arena game with multiple characters and maps to choose from. Clients connect to a third-party hosted cloud service and all client objects are then synced over the network during gameplay. </p>
 				<div class="link-container">
+					<a class="link" onclick="changePage('play-iconic-form')"> Play </a>
 					<a class="link" onclick="changePage('project4-container')">Screenshots</a>
 					<a class="link" href="https://github.com/calsf/iconic-form" target="_blank">Source</a>
-				</div>
-			</div>
-			</div>
-		</div>
-		<div class="slide slide-sm hide csharp">
-			<div class=slide-content>
-			<div class="img-container img-sm-hide">
-				<img class='slide-image' src="./img/leapfrog1.png" alt="image"/>
-			</div>
-			<div class="content-inner inner-sm">
-
-				<div class="hide img-sm-show">
-					<img class='slide-image' src="./img/leapfrog1.png" alt="image"/>
-				</div>
-
-				<h2>Leap Frog Jones</h2>
-				<h4>C# | Unity 2018.3.7</h4>
-				<p class="slide-desc">A single player 2D side-scroller/platformer game. Play as a frog named Jones as he ventures through his home forest. Featuring 5 levels along with level selection, a variety of collectable weapons, automatic saving of level completion and weapon acquisition, high score system, and customizable keybinds. Graphical assets made with Adobe Photoshop. </p>
-				<div class="link-container">
-					<a class="link" onclick="changePage('project5-container')">Screenshots</a>
-					<a class="link" href="https://github.com/calsf/leap-frog" target="_blank">Source</a>
 				</div>
 			</div>
 			</div>
@@ -157,7 +160,7 @@
 
 				<h2>Codex Prime</h2>
 				<h4>Python</h4>
-				<p class="slide-desc">A discord bot for the video game Warframe made using discord.py and WarframeStatus API. Includes commands for obtaining Warframe world state information as well as tracking certain world state information for each user and notifying them of updates. </p>
+				<p class="slide-desc">A discord bot made using discord.py and WarframeStatus API to obtain information from the game Warframe. Can also track requested world state information for each user and notify them of any updates. </p>
 				<div class="link-container">
 					<a class="link" onclick="changePage('project6-container')">Screenshots</a>
 					<a class="link" href="https://github.com/calsf/codex-prime" target="_blank">Source</a>
@@ -180,7 +183,7 @@
 	<!--CONTACT-->
 	<div id="contact-container" class="hide">
 		<p>
-			<a href="mailto:calvin_c32@yahoo.com"><img class="contact-icon" src="./img/email-icon.png" alt="e-mail" title="calvin.ch32@gmail.com"></a>
+			<a href="mailto:calvin.ch32@gmail.com"><img class="contact-icon" src="./img/email-icon.png" alt="e-mail" title="calvin.ch32@gmail.com"></a>
 			<a href="https://github.com/calsf" target="_blank"> <img class="contact-icon" src="./img/git-icon.png" alt="github" title="GitHub - calsf"></a>
 		</p>
 	</div>
@@ -245,11 +248,10 @@
 
 	<div id="project5-container" class="hide project">
 		<div>
-			<img class="screenshot" src="./img/leapfrog1.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/leapfrog2.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/leapfrog3.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/leapfrog4.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/leapfrog5.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/aura1.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/aura2.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/aura3.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/aura4.png" onclick="getImage(this, this.src)"/>
 		</div>
 		<div class="return-container return-sm">
 			<a class="return-arrow" onclick="changePage('slideshow-container'); changeNav('projects-nav')">&larr; 
@@ -265,6 +267,34 @@
 			<img class="screenshot" src="./img/codexprime4.png" onclick="getImage(this, this.src)"/>
 			<img class="screenshot" src="./img/codexprime5.png" onclick="getImage(this, this.src)"/>
 		</div>
+		<div class="return-container return-sm">
+			<a class="return-arrow" onclick="changePage('slideshow-container'); changeNav('projects-nav')">&larr; 
+				<a onclick="changePage('slideshow-container'); changeNav('projects-nav')" class="return-text">Back to Projects</a>
+			</a>
+		</div>
+	</div>
+
+	<!--PLAY-->
+	<div id="play-aura" class="hide project">
+		<iframe id='aura' src="https://itch.io/embed-upload/2494532?color=535353" allowfullscreen="" width="1300" height="760" frameborder="0"><a href="https://solofeathers.itch.io/aura">Play Aura on itch.io</a></iframe>
+		<div class="return-container return-sm">
+			<a class="return-arrow" onclick="changePage('slideshow-container'); changeNav('projects-nav')">&larr; 
+				<a onclick="changePage('slideshow-container'); changeNav('projects-nav')" class="return-text">Back to Projects</a>
+			</a>
+		</div>
+	</div>
+
+	<div id="play-iconic-form" class="hide project">
+		<iframe id='iconic-form' src="https://itch.io/embed-upload/2486433?color=000000" allowfullscreen="" width="1300" height="760" frameborder="0"><a href="https://solofeathers.itch.io/iconic-form">Play Iconic Form on itch.io</a></iframe>
+		<div class="return-container return-sm">
+			<a class="return-arrow" onclick="changePage('slideshow-container'); changeNav('projects-nav')">&larr; 
+				<a onclick="changePage('slideshow-container'); changeNav('projects-nav')" class="return-text">Back to Projects</a>
+			</a>
+		</div>
+	</div>
+
+	<div id="play-warp-bound" class="hide project">
+		<iframe id='warp-bound' src="https://itch.io/embed-upload/2489086?color=000000" allowfullscreen="" width="1440" height="740" frameborder="0"><a href="https://solofeathers.itch.io/warpbound">Play Warp Bound on itch.io</a></iframe>
 		<div class="return-container return-sm">
 			<a class="return-arrow" onclick="changePage('slideshow-container'); changeNav('projects-nav')">&larr; 
 				<a onclick="changePage('slideshow-container'); changeNav('projects-nav')" class="return-text">Back to Projects</a>

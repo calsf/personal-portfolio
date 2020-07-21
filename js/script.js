@@ -2,6 +2,13 @@ let currentSlide = 1;
 let currentPage = document.getElementById("about-nav");
 let dots = document.querySelectorAll(".dot");	//Non-live collection of all dot elements
 let slides = document.getElementsByClassName("slide");	//Default collection of all slides
+
+// iFrame elements
+let aura = document.getElementById('aura');
+let iconicForm = document.getElementById('iconic-form');
+let warpBound = document.getElementById('warp-bound');
+let lastPage = '' // Track last page to reset iframe if leaving
+
 changePage("about-container");
 changeNav("about-nav");
 
@@ -90,6 +97,9 @@ function changePage(page)
 		document.getElementById('project4-container'),
 		document.getElementById('project5-container'),
 		document.getElementById('project6-container'),
+		document.getElementById('play-aura'),
+		document.getElementById('play-iconic-form'),
+		document.getElementById('play-warp-bound'),
 	]
 	for(let i = 0; i < arr.length; i++)
 	{
@@ -109,6 +119,17 @@ function changePage(page)
 	{
 		dots[0].classList.add("hide");
 	}
+
+	// Reset the iframe only when moving away from player
+	if (lastPage == 'play-aura' || lastPage == 'play-warp-bound' || lastPage == 'play-iconic-form')
+	{
+		lastPage = ""
+		aura.src = aura.src
+		iconicForm.src = iconicForm.src
+		warpBound.src = warpBound.src
+	}
+
+	lastPage = page;
 }
 
 //Change navigation selection
