@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 	<script type="text/javascript" src="./js/script.js" async></script>
+	<link rel="shortcut icon" type="image/x-icon" href="c_icon.ico" />
 	<title>Calvin Chen</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
 	<!--ABOUT-->
 	<div id="about-container" class="hide">
 		<h2>Welcome!</h2>
-		<p>My name is Calvin Chen and I am currently a student at the University of Maryland studying Computer Science. During my time studying Computer Science, I have worked on some projects that have helped further expand my knowledge and skillset. These projects are showcased here on this site in the <strong>Projects</strong> section. </p>
+		<p>My name is Calvin Chen and I am currently a student at the University of Maryland studying Computer Science. During my time studying Computer Science, I have worked on some personal projects which I have decided to showcase here on this site in the <strong>Projects</strong> section. </p>
 	</div>
 
 
@@ -39,71 +40,7 @@
 		<a class="prev" onclick="nextSlide(-1)">&#10094;</a>
 		<a class="next" onclick="nextSlide(1)">&#10095;</a>
 
-		<div class="slide slide-sm active-slide javascript">
-			<div class=slide-content>
-			<div class="img-container img-sm-hide">
-				<img class='slide-image' src="./img/framerate1.png" alt="image"/>
-			</div>
-			<div class="content-inner inner-sm">
-
-				<div class="hide img-sm-show">
-					<img class='slide-image' src="./img/framerate1.png" alt="image"/>
-				</div>
-
-				<h2>Framerate</h2>
-				<h4>JavaScript | PostgreSQL | React</h4>
-				<p class="slide-desc">A website for rating weapons and frames from the video game Warframe. Requires user registration and sign-in to submit ratings. User login information is hashed and stored using a PostgreSQL database along with the user's ratings for each item.</p>
-				<div class="link-container">
-					<a class="link" onclick="changePage('project1-container')">Screenshots</a>
-					<a class="link" href="https://github.com/calsf/framerate" target="_blank">Source</a>
-				</div>
-			</div>
-			</div>
-		</div>
-		<div class="slide slide-sm hide javascript">
-			<div class=slide-content>
-			<div class="img-container img-sm-hide">
-				<img class='slide-image' src="./img/homepage1.png" alt="image"/>
-			</div>
-			<div class="content-inner inner-sm">
-
-				<div class="hide img-sm-show">
-					<img class='slide-image' src="./img/homepage1.png" alt="image"/>
-				</div>
-
-				<h2>Home Page</h2>
-				<h4>JavaScript</h4>
-				<p class="slide-desc">A website meant to serve as a home page for browsers. Includes weather information using OpenWeatherMap API integration, Google search bar, quick links, notepad, and customizable settings.</p>
-				<div class="link-container">
-					<a class="link" onclick="changePage('project2-container')">Screenshots</a>
-					<a class="link" href="https://github.com/calsf/home-page" target="_blank">Source</a>
-				</div>
-			</div>
-			</div>
-		</div>
-		<div class="slide slide-sm hide javascript">
-			<div class=slide-content>
-			<div class="img-container img-sm-hide">
-				<img class='slide-image' src="./img/warpbound2.png" alt="image"/>
-			</div>
-			<div class="content-inner inner-sm">
-
-				<div class="hide img-sm-show">
-					<img class='slide-image' src="./img/warpbound2.png" alt="image"/>
-				</div>
-
-				<h2>Warp Bound</h2>
-				<h4>JavaScript</h4>
-				<p class="slide-desc">An experimental bullet hell style game. Unlike traditional bullet hell games, the only method of movement is to teleport around. Includes high score system and a single tap setting to teleport and attack with one click. </p>
-				<div class="link-container">
-					<a class="link" onclick="changePage('play-warp-bound')"> Play </a>
-					<a class="link" onclick="changePage('project3-container')">Screenshots</a>
-					<a class="link" href="https://github.com/calsf/warp-bound" target="_blank">Source</a>
-				</div>
-			</div>
-			</div>
-		</div>
-		<div class="slide slide-sm hide csharp">
+		<div class="slide slide-sm active-slide csharp">
 			<div class=slide-content>
 			<div class="img-container img-sm-hide">
 				<img class='slide-image' src="./img/aura1.png" alt="image"/>
@@ -119,7 +56,7 @@
 				<p class="slide-desc">A single player 2D platformer game. Includes 16 playable levels along with 13 unlockable and upgradable weapons. All player progress is serialized and saved to a binary file. Supports keyboard and gamepad along with customizable keybinds. </p>
 				<div class="link-container">
 					<a class="link" onclick="changePage('play-aura')"> Play </a>
-					<a class="link" onclick="changePage('project5-container')">Screenshots</a>
+					<a class="link" onclick="changePage('project1-container')">Screenshots</a>
 					<a class="link" href="https://github.com/calsf/aura" target="_blank">Source</a>
 				</div>
 			</div>
@@ -138,10 +75,10 @@
 
 				<h2>Iconic Form</h2>
 				<h4>C# | Unity 2018.3.7</h4> 
-				<p class="slide-desc">A 2D top down online multiplayer battle arena game with multiple characters and maps to choose from. Clients connect to a third-party hosted cloud service and all client objects are then synced over the network during gameplay. </p>
+				<p class="slide-desc">A 2D top down online multiplayer battle arena game with multiple characters and maps to choose from. Uses a third-party hosted cloud service to connect players and sync network objects across all clients. </p>
 				<div class="link-container">
 					<a class="link" onclick="changePage('play-iconic-form')"> Play </a>
-					<a class="link" onclick="changePage('project4-container')">Screenshots</a>
+					<a class="link" onclick="changePage('project2-container')">Screenshots</a>
 					<a class="link" href="https://github.com/calsf/iconic-form" target="_blank">Source</a>
 				</div>
 			</div>
@@ -162,12 +99,76 @@
 				<h4>Python</h4>
 				<p class="slide-desc">A discord bot made using discord.py and WarframeStatus API to obtain information from the game Warframe. Can also track requested world state information for each user and notify them of any updates. </p>
 				<div class="link-container">
-					<a class="link" onclick="changePage('project6-container')">Screenshots</a>
+					<a class="link" onclick="changePage('project3-container')">Screenshots</a>
 					<a class="link" href="https://github.com/calsf/codex-prime" target="_blank">Source</a>
 				</div>
 			</div>
 			</div>
 		</div>
+		<div class="slide slide-sm hide javascript">
+			<div class=slide-content>
+			<div class="img-container img-sm-hide">
+				<img class='slide-image' src="./img/framerate1.png" alt="image"/>
+			</div>
+			<div class="content-inner inner-sm">
+
+				<div class="hide img-sm-show">
+					<img class='slide-image' src="./img/framerate1.png" alt="image"/>
+				</div>
+
+				<h2>Framerate</h2>
+				<h4>JavaScript | PostgreSQL | React</h4>
+				<p class="slide-desc">First experience with web development, this website shows ratings for weapons and frames from the video game Warframe. Requires user registration and sign-in to submit ratings. User login information is hashed and stored using a PostgreSQL database along with the user's ratings for each item.</p>
+				<div class="link-container">
+					<a class="link" onclick="changePage('project4-container')">Screenshots</a>
+					<a class="link" href="https://github.com/calsf/framerate" target="_blank">Source</a>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="slide slide-sm hide javascript">
+			<div class=slide-content>
+			<div class="img-container img-sm-hide">
+				<img class='slide-image' src="./img/homepage1.png" alt="image"/>
+			</div>
+			<div class="content-inner inner-sm">
+
+				<div class="hide img-sm-show">
+					<img class='slide-image' src="./img/homepage1.png" alt="image"/>
+				</div>
+
+				<h2>Home Page</h2>
+				<h4>JavaScript</h4>
+				<p class="slide-desc">A website meant to serve as a home page for browsers. Includes weather information using OpenWeatherMap API integration, Google search bar, quick links, notepad, and customizable settings.</p>
+				<div class="link-container">
+					<a class="link" onclick="changePage('project5-container')">Screenshots</a>
+					<a class="link" href="https://github.com/calsf/home-page" target="_blank">Source</a>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="slide slide-sm hide javascript">
+			<div class=slide-content>
+			<div class="img-container img-sm-hide">
+				<img class='slide-image' src="./img/warpbound2.png" alt="image"/>
+			</div>
+			<div class="content-inner inner-sm">
+
+				<div class="hide img-sm-show">
+					<img class='slide-image' src="./img/warpbound2.png" alt="image"/>
+				</div>
+
+				<h2>Warp Bound</h2>
+				<h4>JavaScript</h4>
+				<p class="slide-desc">An experimental bullet hell style game made with Phaser 3 framework. Unlike traditional bullet hell games, the only method of movement is to teleport around. </p>
+				<div class="link-container">
+					<a class="link" onclick="changePage('play-warp-bound')"> Play </a>
+					<a class="link" onclick="changePage('project6-container')">Screenshots</a>
+				</div>
+			</div>
+			</div>
+		</div>
+		
 	</div>
 
 	<!--SLIDE DOTS-->
@@ -189,12 +190,12 @@
 	</div>
 
 	<!--PROJECT CONTAINERS-->
-	<div id="project1-container" class="hide project">
+		<div id="project1-container" class="hide project">
 		<div>
-			<img class="screenshot" src="./img/framerate1.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/framerate2.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/framerate3.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/framerate4.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/aura1.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/aura2.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/aura3.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/aura4.png" onclick="getImage(this, this.src)"/>
 		</div>
 		<div class="return-container return-sm">
 			<a class="return-arrow" onclick="changePage('slideshow-container'); changeNav('projects-nav')">&larr; 
@@ -204,34 +205,6 @@
 	</div>
 
 	<div id="project2-container" class="hide project">
-		<div>
-			<img class="screenshot" src="./img/homepage2.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/homepage3.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/homepage4.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/homepage5.png" onclick="getImage(this, this.src)"/>
-		</div>
-		<div class="return-container return-sm">
-			<a class="return-arrow" onclick="changePage('slideshow-container'); changeNav('projects-nav')">&larr; 
-				<a onclick="changePage('slideshow-container'); changeNav('projects-nav')" class="return-text">Back to Projects</a>
-			</a>
-		</div>
-	</div>
-
-	<div id="project3-container" class="hide project">
-		<div>
-			<img class="screenshot" src="./img/warpbound1.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/warpbound2.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/warpbound3.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/warpbound4.png" onclick="getImage(this, this.src)"/>
-		</div>
-		<div class="return-container return-sm">
-			<a class="return-arrow" onclick="changePage('slideshow-container'); changeNav('projects-nav')">&larr; 
-				<a onclick="changePage('slideshow-container'); changeNav('projects-nav')" class="return-text">Back to Projects</a>
-			</a>
-		</div>
-	</div>
-
-	<div id="project4-container" class="hide project">
 		<div>
 			<img class="screenshot" src="./img/iconicform1.png" onclick="getImage(this, this.src)"/>
 			<img class="screenshot" src="./img/iconicform2.png" onclick="getImage(this, this.src)"/>
@@ -246,12 +219,40 @@
 		</div>
 	</div>
 
+	<div id="project3-container" class="hide project">
+		<div>
+			<img class="screenshot" src="./img/codexprime2.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/codexprime3.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/codexprime4.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/codexprime5.png" onclick="getImage(this, this.src)"/>
+		</div>
+		<div class="return-container return-sm">
+			<a class="return-arrow" onclick="changePage('slideshow-container'); changeNav('projects-nav')">&larr; 
+				<a onclick="changePage('slideshow-container'); changeNav('projects-nav')" class="return-text">Back to Projects</a>
+			</a>
+		</div>
+	</div>
+
+	<div id="project4-container" class="hide project">
+		<div>
+			<img class="screenshot" src="./img/framerate1.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/framerate2.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/framerate3.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/framerate4.png" onclick="getImage(this, this.src)"/>
+		</div>
+		<div class="return-container return-sm">
+			<a class="return-arrow" onclick="changePage('slideshow-container'); changeNav('projects-nav')">&larr; 
+				<a onclick="changePage('slideshow-container'); changeNav('projects-nav')" class="return-text">Back to Projects</a>
+			</a>
+		</div>
+	</div>
+
 	<div id="project5-container" class="hide project">
 		<div>
-			<img class="screenshot" src="./img/aura1.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/aura2.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/aura3.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/aura4.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/homepage2.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/homepage3.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/homepage4.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/homepage5.png" onclick="getImage(this, this.src)"/>
 		</div>
 		<div class="return-container return-sm">
 			<a class="return-arrow" onclick="changePage('slideshow-container'); changeNav('projects-nav')">&larr; 
@@ -262,10 +263,10 @@
 
 	<div id="project6-container" class="hide project">
 		<div>
-			<img class="screenshot" src="./img/codexprime2.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/codexprime3.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/codexprime4.png" onclick="getImage(this, this.src)"/>
-			<img class="screenshot" src="./img/codexprime5.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/warpbound1.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/warpbound2.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/warpbound3.png" onclick="getImage(this, this.src)"/>
+			<img class="screenshot" src="./img/warpbound4.png" onclick="getImage(this, this.src)"/>
 		</div>
 		<div class="return-container return-sm">
 			<a class="return-arrow" onclick="changePage('slideshow-container'); changeNav('projects-nav')">&larr; 
